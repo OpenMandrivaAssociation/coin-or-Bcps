@@ -1,0 +1,21 @@
+diff -up Bcps-0.93.11/Makefile.in.orig Bcps-0.93.11/Makefile.in
+--- Bcps-0.93.11/Makefile.in.orig	2014-03-08 09:44:37.891780259 -0300
++++ Bcps-0.93.11/Makefile.in	2014-03-08 09:44:42.873780450 -0300
+@@ -395,7 +395,7 @@ EXTRA_DIST = examples/Blis/BlisBranchObj
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = bcps.pc
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Bcps
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -404,7 +404,7 @@ addlibsdir = $(DESTDIR)$(datadir)/coin/d
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:
