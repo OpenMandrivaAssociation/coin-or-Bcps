@@ -10,6 +10,11 @@ License:	EPL
 URL:		https://projects.coin-or.org/CHiPPS
 Source0:	http://www.coin-or.org/download/pkgsource/CHiPPS/%{module}-%{version}.tgz
 Source1:	%{name}.rpmlintrc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	blas-devel
 BuildRequires:	bzip2-devel
 BuildRequires:	coin-or-Alps-devel
